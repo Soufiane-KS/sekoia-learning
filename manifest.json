@@ -1,0 +1,13 @@
+{
+  "configuration": {
+    "title": "WeatherModuleConfiguration",
+    "type": "object",
+    "properties": {}
+  },
+  "description": "weather",
+  "name": "weather",
+  "slug": "weather",
+  "categories": [],
+  "uuid": "09e09f54-6b6c-4deb-a36c-46bc47d7d57a",
+  "version": "0.1.0"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Get Current Weather",
+  "description": "Gets the current weather for a given city using the wttr.in API",
+  "uuid": "7aa11bd6-122f-5063-b42c-21e5452968f1",
+  "docker_parameters": "GetWeatherAction",
+  "arguments": {
+    "title": "GetWeatherArguments",
+    "type": "object",
+    "properties": {
+      "city": {
+        "title": "City",
+        "description": "City name to get weather for",
+        "type": "string"
+      }
+    },
+    "required": [
+      "city"
+    ]
+  },
+  "results": {
+    "title": "GetWeatherResults",
+    "type": "object",
+    "properties": {
+      "temperature": {
+        "title": "Temperature",
+        "description": "Current temperature in Celsius",
+        "type": "string"
+      },
+      "description": {
+        "title": "Description",
+        "description": "Weather description",
+        "type": "string"
+      },
+      "humidity": {
+        "title": "Humidity",
+        "description": "Humidity percentage",
+        "type": "string"
+      },
+      "wind_speed": {
+        "title": "Wind Speed",
+        "description": "Wind speed in km/h",
+        "type": "string"
+      }
+    },
+    "required": [
+      "temperature",
+      "description",
+      "humidity",
+      "wind_speed"
+    ]
+  }
+}
